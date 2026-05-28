@@ -18,7 +18,7 @@ are synced to C++. Both are MIT-licensed.
 - **Header-only / single crate** — minimal dependencies
 - **SIMD-optimized** — ARM NEON and x86 AVX2, ~100ns L2 distance (768d)
 - **Multiple indexes** — brute-force, HNSW, memory-mapped
-- **GPU acceleration** — Metal (Apple Silicon), CUDA (NVIDIA)
+- **GPU acceleration** — Metal (Apple Silicon); CUDA is experimental
 - **Cross-platform** — Linux, macOS, Windows, iOS, Android, WASM
 
 ---
