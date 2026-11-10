@@ -19,16 +19,23 @@ a second product: it stays as the other arm of the cross-engine benchmark and
 as a drop-in header for existing C++ projects, and features are not ported to
 it.
 
-> **Pre-release.** Nothing is published to crates.io or PyPI yet; build from
-> the repository. The former `vanedb-cpp` and `vanedb-bench` repositories were
-> consolidated into this one and are archived.
+Install the published packages:
+
+```sh
+cargo add vanedb                 # Rust
+python -m pip install vanedb     # Python
+npm install @vanedb/wasm         # JavaScript / WebAssembly
+```
+
+The former `vanedb-cpp` and `vanedb-bench` repositories were consolidated
+into this one and are archived.
 
 ## Highlights
 
 - **One crate, few dependencies** — a single Rust crate plus thin bindings
 - **SIMD-optimized** — ARM NEON and x86 AVX2, with a scalar reference path
 - **Multiple indexes** — brute-force, HNSW, and memory-mapped
-- **GPU acceleration** — Metal on Apple Silicon; CUDA is experimental
+- **GPU** — an experimental Metal feature on macOS; CUDA is not implemented
 - **Cross-platform** — Linux, macOS, Windows, iOS, Android, WASM
 
 Measured numbers, including the cross-engine comparison, live in
