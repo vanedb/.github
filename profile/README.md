@@ -19,8 +19,16 @@ a second product: it stays as the other arm of the cross-engine benchmark and
 as a drop-in header for existing C++ projects, and features are not ported to
 it.
 
-> **Pre-release.** Nothing is published to crates.io or PyPI yet; build from
-> the repository. The former `vanedb-cpp` and `vanedb-bench` repositories were
+**0.2.0** is published. Install the Rust crate, the Python package, or the
+WebAssembly package:
+
+```sh
+cargo add vanedb
+python -m pip install vanedb
+npm install @vanedb/wasm
+```
+
+> The former `vanedb-cpp` and `vanedb-bench` repositories were
 > consolidated into this one and are archived.
 
 ## Highlights
