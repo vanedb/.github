@@ -1,7 +1,7 @@
 # VaneDB
 
-**Embeddable vector database for edge AI.** SIMD-optimized similarity search
-that runs anywhere — from mobile devices to GPUs.
+**Embeddable vector database for edge AI.** SIMD similarity search for
+Rust, Python, C, and WebAssembly.
 
 ## One repository
 
@@ -36,7 +36,7 @@ npm install @vanedb/wasm
 - **One crate, few dependencies** — a single Rust crate plus thin bindings
 - **SIMD-optimized** — ARM NEON and x86 AVX2, with a scalar reference path
 - **Multiple indexes** — brute-force, HNSW, and memory-mapped
-- **GPU acceleration** — Metal on Apple Silicon; CUDA is experimental
+- **GPU** — experimental Metal distance scans on macOS; they accelerate no index. CUDA is not implemented
 - **Cross-platform** — Linux, macOS, Windows, iOS, Android, WASM
 
 Measured numbers, including the cross-engine comparison, live in
